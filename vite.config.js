@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Vercel static asset path fix
+  base: '/', // ✅ এইটা Vercel ও Netlify-এর জন্য ঠিক
   build: {
     outDir: 'dist',
   },
